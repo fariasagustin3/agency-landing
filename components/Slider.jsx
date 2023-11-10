@@ -44,7 +44,10 @@ const Slider = () => {
   return (
     <section className='w-full h-screen bg-[#E0E0E0] flex flex-col justify-between px-40'>
       {slides.map((slide) => slide.id === currentIndex && (
-        <div className='flex flex-row items-center justify-between h-screen transition duration-1000 fade-enter-active'>
+        <div 
+          className='flex flex-row items-center justify-between h-screen transition duration-1000 fade-enter-active'
+          key={slide.id}
+        >
           <div className='flex flex-col flex-1'>
             <h1 className='font-semibold text-5xl text-[#4D4D4D]'>{slide.title}</h1>
             <p className='font-semibold text-5xl text-[#4CAF4F]'>{slide.extraTitle}</p>
@@ -55,6 +58,7 @@ const Slider = () => {
             <Image
               src={SlideImage}
               className='w-96 flex-1'
+              alt=""
             />
           </div>
         </div>
@@ -67,6 +71,7 @@ const Slider = () => {
               className='w-5 h-5 cursor-pointer'
               onClick={() => goToSlide(slide.id)}
               key={slide.id}
+              alt=""
             />
           ) : (
             <Image
@@ -74,6 +79,7 @@ const Slider = () => {
               className='w-5 h-5 cursor-pointer'
               onClick={() => goToSlide(slide.id)}
               key={slide.id}
+              alt=""
             />
           )
         ))}
