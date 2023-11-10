@@ -1,3 +1,4 @@
+import Archievements from '@/components/Archievements'
 import ClientsSection from '@/components/ClientsSection'
 import Community from '@/components/Community'
 import NavBar from '@/components/NavBar'
@@ -6,12 +7,13 @@ import Unlock from '@/components/Unlock'
 
 export default function Home() {
   return (
-    <main className="w-full h-screen bg-[#FFFFFF]">
+    <main className="w-full h-screen bg-[#FFFFFF] overflow-x-hidden">
       <NavBar />
       <Slider />
       <ClientsSection />
       <Community />
       <Unlock />
+      <Archievements />
     </main>
   )
 }
