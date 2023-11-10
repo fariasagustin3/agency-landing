@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-enter {
+  animation: fadeIn 500ms ease-in-out;
+  opacity: 0;
+}
+
+.fade-enter-active {
+  animation: fadeIn 500ms ease-in-out;
+  opacity: 1;
+}
