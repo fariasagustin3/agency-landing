@@ -2,6 +2,7 @@ import ClientsSection from '@/components/ClientsSection'
 import Community from '@/components/Community'
 import NavBar from '@/components/NavBar'
 import Slider from '@/components/Slider'
+import Unlock from '@/components/Unlock'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Slider />
       <ClientsSection />
       <Community />
+      <Unlock />
     </main>
   )
 }
