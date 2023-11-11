@@ -43,7 +43,7 @@ const content = {
 
 const Customers = () => {
   return (
-    <section className='flex flex-row justify-between items-center px-10 py-20'>
+    <section className='flex flex-row justify-between items-center px-10 py-20 bg-[#E8F5E9]'>
       <div className='flex w-1/3 justify-end'>
         <Image
           src={Logo}
