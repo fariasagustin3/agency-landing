@@ -3,6 +3,7 @@ import ClientsSection from '@/components/ClientsSection'
 import Community from '@/components/Community'
 import CommunityUpdates from '@/components/CommunityUpdates'
 import Customers from '@/components/Customers'
+import Footer from '@/components/Footer'
 import FooterSmall from '@/components/FooterSmall'
 import NavBar from '@/components/NavBar'
 import Slider from '@/components/Slider'
@@ -20,6 +21,7 @@ export default function Home() {
       <Customers />
       <CommunityUpdates />
       <FooterSmall />
+      <Footer />
     </main>
   )
 }
