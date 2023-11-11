@@ -1,6 +1,7 @@
 import Archievements from '@/components/Archievements'
 import ClientsSection from '@/components/ClientsSection'
 import Community from '@/components/Community'
+import Customers from '@/components/Customers'
 import NavBar from '@/components/NavBar'
 import Slider from '@/components/Slider'
 import Unlock from '@/components/Unlock'
@@ -12,8 +13,9 @@ export default function Home() {
       <Slider />
       <ClientsSection />
       <Community />
-      <Unlock />
       <Archievements />
+      <Unlock />
+      <Customers />
     </main>
   )
 }
